@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+h1{ text-align: center;
+}
+#contenedor{
+    display: grid;
+    grid-template-areas:
+    "uno dos dos tres"
+    "uno cinco siete cuatro"
+    "uno ocho seis cuatro";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: auto;
+    height: 90vh;
+    border: 1px solid black;
+
+}
+
+.caja{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    color: white;
+    align-content: center;
+    text-align: center;
+}
+.uno{
+    background: linear-gradient(blue , purple);
+    grid-area: uno;
+}
+.dos{
+    background: linear-gradient(blue , purple);
+    grid-area: dos;
+}
+.tres{
+    background: linear-gradient( pink, red);
+    grid-area: tres;
+}
+.cuatro{
+    background: linear-gradient(blue , purple);
+    grid-area: cuatro;
+}
+.cinco{
+    background: linear-gradient(skyblue, orange);
+    grid-area: cinco;
+}
+.seis{
+    background: linear-gradient(skyblue, orange);
+    grid-area: seis;
+}
+.siete{
+    background: linear-gradient( pink, red);
+    grid-area: siete;
+}
+.ocho{
+    background: linear-gradient( pink, red);
+    grid-area: ocho;
+}
